@@ -1,0 +1,53 @@
+:root{
+  --light: #f6f6f9;
+  --primary: #1976D2;
+  --light-primary: #CFE8FF;
+  --grey: #eee;
+  --dark-grey: #AAAAAA;
+  --dark: #363949;
+  --danger: #D32f2f;
+  --light-danger: #FEC0D3;
+  --warning: #Fbc02d;
+  --light-warning: #FFF2c6;
+  --success: #388e3c;
+  --light-success: #BBF7D0;
+  --home: #3c00a0;
+}
+
+.track-container{
+  margin: 0 auto;
+  height: 100vh;
+  background-color: black;
+}
+
+.auto-grid {
+  --auto-grid-min-size: 16rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+  grid-gap: 1rem;
+  
+}
+
+.auto-grid  li{
+  list-style-type: none;
+  padding: 5rem 1rem;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.2rem;
+  
+}
+
+.auto-grid  li.pending{
+  background: var(--warning);
+  color: var(--light);
+}
+
+.auto-grid  li.completed{
+  background: var(--success);
+  color: var(--light);
+}
+
+.auto-grid li.not-started{
+  background: var(--danger);
+  color: var(--light);
+}

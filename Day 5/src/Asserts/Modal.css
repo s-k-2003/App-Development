@@ -1,0 +1,53 @@
+@media (max-width: 780px) {
+    
+    .modal {
+        position: fixed;
+        top: -16%;
+        left: 30%;
+        width: 100%;
+        height: 100%;
+        background: transparent; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .modal-content {
+       
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      
+      .modal-content ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      .modal-content li {
+        margin: 10px 0; /* Adjusted margin for better spacing */
+      }
+      
+      .modal-content a {
+        cursor: pointer;
+        text-decoration: none;
+        color: #fff; 
+        font-size: 16px; 
+        display: inline-block;
+        padding: 8px 16px; 
+        border-radius: 4px;
+      }
+      
+      /* .modal-content a:hover {
+        background-color: #DDFFD9;
+      } */
+    
+      .cross-icon {
+        cursor: pointer;
+        text-align: end;
+        font-size: 24px;
+        color: white; /* Color of the cross icon */
+      }
+}
