@@ -1,0 +1,149 @@
+:root{
+   --darkviolet: #3c00a0;
+   --darkwhite: #eaeaea;
+   --cement: #999;
+   --primary: #1976D2;
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:  'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(25, 118, 210, 0.9),rgba(20, 96, 168, 0.8)),url('../Asserts/Images/food2.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.form-box{
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); /*To display the form data in center of the page*/
+    background: #fff;
+    padding: 50px 60px 70px;
+    border-radius:20px;
+    text-align: center;
+}
+
+.form-box h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: var(--primary);
+    position: relative;
+}
+
+.form-box h1::after{
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: var(--primary);
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.input-field{
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+
+
+input:invalid{
+    animation: shake 300ms;
+    color: var(--danger);
+}
+
+@keyframes shake{
+    25%{
+        transform: translateX(4px);
+    }
+    50%{
+        transform: translateX(-4px);
+    }
+    75%{
+        transform: translateX(4px);
+    }
+}
+
+
+.input-field .icon{
+    color: #999;
+    width: 100px;
+}
+
+
+form .forgot-password{
+    text-align: left;
+    font-size: 16px;
+}
+
+form .forgot-password span{
+    cursor: pointer;
+    color: lightcoral;
+    font-weight: 1000;
+}
+form .back-home{
+    text-align: left;
+    font-size: 16px;
+}
+form .back-home span{
+    cursor: pointer;
+    color: var(--primary);
+}
+
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn button{
+    flex-basis: 48%;
+    background: var(--primary);
+    color: #fff;
+    height: 40px;
+    border-radius:20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+.input-group{
+    height: 280px;
+}
+
+.btn button.disable{
+    background: #eaeaea;
+    color: #555;
+}
+
+
+
+

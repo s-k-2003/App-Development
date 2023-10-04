@@ -1,0 +1,151 @@
+:root{
+  --light: #f6f6f9;
+  --primary: #1976D2;
+  --light-primary: #CFE8FF;
+  --grey: #eee;
+  --dark-grey: #AAAAAA;
+  --dark: #363949;
+  --danger: #D32f2f;
+  --light-danger: #FEC0D3;
+  --warning: #Fbc02d;
+  --light-warning: #FFF2c6;
+  --success: #388e3c;
+  --light-success: #BBF7D0;
+  --home: #3c00a0;
+}
+
+.track-container{
+  margin: 0 auto;
+  height: 100vh;
+  max-height: 100%;
+  background-color: black;
+}
+
+.auto-grid {
+  --auto-grid-min-size: 16rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+  grid-gap: 1rem;
+  
+  
+}
+
+.auto-grid  li{
+  cursor: pointer;
+  margin-top: 1em;
+  list-style-type: none;
+  padding: 5rem 1rem;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.2rem;
+  border-radius: 3%;
+  background: var(--light);
+  color: var(--dark);
+  border-top: 40px solid var(--success);
+  border-bottom: 40px solid var(--success);
+}
+
+
+
+
+.auto-grid table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.auto-grid th, .auto-grid td {
+  font-size: 13px;
+  border: none;
+  padding: 1px;
+  text-align: center;
+}
+
+.auto-grid th {
+  background-color: transparent;
+}
+
+/*Take-Outs*/
+
+.auto-grid  li.take-out h3.order-type{
+  color: var(--light);
+  margin-top: -6.8em;
+  font-size: 16px;
+  float: left;
+}
+
+.auto-grid li.take-out p.order-time span{
+  color: var(--light);
+  margin-top: -6.8em;
+  font-size: 16px;
+  float: right;
+}
+
+.auto-grid li.take-out p.order-id {
+  margin-top: -4.5em;
+  font-size: 16px;
+  float: left;
+}
+
+.auto-grid li.take-out h3.customer{
+  margin-top: -4.5em;
+  font-size: 16px;
+  float: right;
+}
+
+/*Dine*/
+
+.auto-grid  li.dine h3.order-type{
+  color: var(--light);
+  margin-top: -6.8em;
+  font-size: 16px;
+  float: left;
+}
+
+.auto-grid li.dine p.order-time span{
+  color: var(--light);
+  margin-top: -6.8em;
+  font-size: 16px;
+  float: right;
+}
+
+.auto-grid li.dine p.order-id {
+  margin-top: -4.5em;
+  font-size: 16px;
+  float: left;
+}
+
+.auto-grid li.dine h3.order-table {
+  margin-top: -3em;
+  font-size: 16px;
+  float: left;
+  display: block;
+}
+
+.auto-grid li.dine h3.customer{
+  margin-top: -4.5em;
+  font-size: 16px;
+  float: right;
+}
+
+/*Doesn't displays table no*/
+
+.auto-grid li h3.order-table{
+  display: none;
+}
+
+.auto-grid li.take-out h3.order-table{
+  display: none;
+}
+
+/*Click To Complete*/
+
+.auto-grid li.take-out h3.finish{
+  text-align: end;
+  font-size: 16px;
+  
+}
+.auto-grid li.dine h3.finish{
+  
+  font-size: 16px;
+  float: left;
+}

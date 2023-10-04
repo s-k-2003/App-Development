@@ -1,0 +1,31 @@
+
+
+.privacy h1 {
+    /* font-family: bebas neue; */
+    font-size: 46px;
+    text-align: center;
+    color: rgb(44,48,52);
+    margin-left: 3em;
+    margin-right: 3em;
+    padding: 0 0 6px 0;
+    border-bottom: 5px solid rgba(0,0,0,1);
+  }
+  .privacy h2 {
+    /* font-family: bebas neue; */
+    font-size: 26px;
+    line-height: 20px;
+    text-align: left;
+    color: rgb(44,48,52);
+     margin-left: 5em;
+    padding: 20px 0 0 0;
+  }
+  .privacy p {
+    /* font-family: open sans; */
+    
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: rgb(44,48,52);
+    margin-left: 10em;
+    margin-right: 10em;
+    padding: 10px 0 0 0;
+  }
